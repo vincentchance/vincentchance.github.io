@@ -1,4 +1,4 @@
 # vincentchance.github.io
 
-Portofolio Template (in progress)
+Portofolio Template 
 
