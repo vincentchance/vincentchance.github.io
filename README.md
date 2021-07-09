@@ -1,6 +1,6 @@
 # vincentchance.github.io
-My portofolio project designed for job hunting fair and freelance offer
+My portofoliodesigned for job hunting fair and freelance offering.
 
-The website can be used in both mobile and computer, and good looking with simple green color.
+Connect with me: 
 
-The more implementation I used bookstrap 5 to complete this portofolio.
+http://vincentchance.github.io
