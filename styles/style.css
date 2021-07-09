@@ -1,6 +1,6 @@
 .profile {
   background-color: #b7e6b2f3;
-  height: 600px;
+  height: 700px;
 }
 .title {
   display: inline;
@@ -16,7 +16,7 @@
 /* about me */
 #About {
   padding-top: 60px;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
   background-color: snow;
 }
 /*projects*/
