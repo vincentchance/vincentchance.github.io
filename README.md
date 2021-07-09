@@ -1,6 +1,4 @@
 # vincentchance.github.io
-My portofoliodesigned for job hunting fair and freelance offering.
 
-Connect with me: 
+Portofolio Template (in progress)
 
-http://vincentchance.github.io
