@@ -35,11 +35,20 @@
   margin: auto;
   display: block;
   text-align: center;
+  width: 100px;
 }
 /*footer*/
 #footer {
-  padding-top: 3%;
+  padding-top: 2%;
   margin-bottom: 0%;
   position: static;
-  padding-bottom: 3%;
+  padding-bottom: 1%;
+}
+/*to the top button */
+.scrollup {
+  width: 35px;
+  height: 35px;
+  position: fixed;
+  bottom: 30px;
+  right: 15px;
 }
