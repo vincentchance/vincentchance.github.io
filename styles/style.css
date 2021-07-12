@@ -32,10 +32,9 @@
 }
 /*send*/
 #btn {
-  margin: auto;
-  display: block;
+  float: right;
   text-align: center;
-  width: 100px;
+  width: 200px;
 }
 /*footer*/
 #footer {
@@ -51,4 +50,5 @@
   position: fixed;
   bottom: 30px;
   right: 15px;
+  display: none;
 }
