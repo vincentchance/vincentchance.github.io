@@ -119,18 +119,19 @@
         <div class="row justify-content-center">
           <div class="col-md-8 mt-5">
             <form>
-              <div class="mb-3">
-                <label for="name" class="form-label">Name</label>
-                <input type="name" class="form-control" id="name" aria-describedby="name" />
-              </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" aria-describedby="email" />
-              </div>
-              <div class="mb-3">
-                <label for="Pesan" class="form-label">Pesan</label>
-                <textarea class="form-control" id="Pesan" row="3"></textarea>
-              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <input class="form-control" id="name" placeholder="Full Name" type="text" />
+                </div>
+                <div class="col-md-4">
+                  <input class="form-control" id="email" placeholder="Your Email" type="email" />
+                </div>
+                <div class="col-md-4">
+                  <input class="form-control" id="subject" placeholder="Subject" type="text" />
+                </div>
+                <div class="col-md-12 mt-4 mb-4">
+                  <textarea class="form-control" id="message" rows="7" placeholder="Your Message"></textarea>
+                </div>
               <button type="submit" id="btn" class="btn btn-success rounded-pill">Send</button>
             </form>
           </div>
