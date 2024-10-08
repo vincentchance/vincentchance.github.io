@@ -969,6 +969,10 @@ video {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .sm\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .sm\:gap-4 {
     gap: 1rem;
   }
@@ -994,5 +998,13 @@ video {
 
   .xs\:max-w-xl {
     max-width: 36rem;
+  }
+
+  .xs\:gap-4 {
+    gap: 1rem;
+  }
+
+  .xs\:gap-10 {
+    gap: 2.5rem;
   }
 }
