@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>My Simple Webpage</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/17a0a8acc6.js" crossorigin="anonymous"></script>
+	<link href="src/output.css" rel="stylesheet">
+	<style>
+        .carousel {
+            display: none;
+        }
+        .carousel.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+	<!-- Navbar -->
+	  <nav class="flex flex-wrap w-full bg-white shadow-lg sticky top-0 z-50 py-4 px-4">
+		<div class="flex w-full flex-wrap items-center justify-between">
+			<div class="ms-2 text-blue-500">
+				<a class="text-xl font-bold" href="#">Vincent Chance</a>
+			</div>
+			<!-- tombol hamburger -->
+			<div class="relative">
+				<button id="menu-btn" class="xs:block hidden text-slate-800 focus:outline-none mr-2">
+					<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+					</svg>
+				</button>
+				<ul id="myDropdown" class="hidden absolute font-semibold bg-white shadow-lg p-2 right-2 flex-col rounded-md h-28 w-36 z-100">
+					<li class="text-dark"><a href="#about" >Tentang Saya</a></li>
+					<li class="text-dark"><a href="#project" >Project</a></li>
+					<li class="text-dark"><a href="#contact">Kontak</a></li>
+				</ul>
+			</div>
+			
+			<!-- menu bar -->
+			<ul id="menu" class="flex space-x-6 py-2 xs:hidden">
+				<li><a href="#about" class="text-dark hover:text-slate-600">Tentang saya</a></li>
+				<li><a href="#project" class="text-dark hover:text-slate-600">Project</a></li>
+				<li><a href="#contact" class="text-dark hover:text-slate-600">Kontak</a></li>
+			</ul>
+		</div>
+	  </nav>
+	<section id="home" class="pt-36 pb-32 bg-blue-100">
+		<div class="container">
+			<div class="flex flex-wrap">
+				<div class="w-full self-center text-center justify-center">
+					<h1 class="font-bold text-blue-500 text-2xl">Selamat datang 👋 di Web Portofolio saya</h1>
+					<p class="text-xl font-semibold text-dark mb-3">perkenalkan nama saya,</p> 
+					<p class=" text-neutral-950 font-semibold text-4xl">Vincent Chance</p>
+					<h2 class="font-semibold text-2xl text-neutral-950 mb-10 mt-5 pb-5">FullStack Web Developer</h2>
+					<a href="#" class="text-base font-semibold py-3 px-8 rounded-full bg-blue-500 text-white hover:bg-blue-200">Hubungi saya</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="about" class="pt-36 pb-32">
+		<div class="container">
+			<div class="w-full self-center px-20 justify-center">
+				<h1 class="text-center font-semibold text-blue-500 text-xl mb-5">TENTANG SAYA</h1>
+				<div class="sm:grid sm:grid-cols-2 sm:gap-4 pl-5">
+					<div class="xs:mb-4">
+						<h2 class="font-bold text-blue-500 text-lg">HARD SKILL</h2>
+						<p class="font-semibold">full stack developer, menguasai bahasa pemprograman javascript, typescript, framework reactjs, backend: expressjs, pembuatan rest api, nodejs serta frontEndUI: NextUI, bookstrap, dan aplikasi tambahan: Postman.</p>
+					</div>
+					<div>
+						<h2 class="font-bold text-blue-500 text-lg">PENDIDIKAN</h2>
+						<p class="font-semibold"> Enigma Bootcamp - mempelajari bahasa pemprograman javascript, framework reactjs dan library reactjs khusus pembuatan aplikasi website, serta reactUI: NextUI, serta ilmu dasar pembuatan website, yaitu html, css, tailwindCSS.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="project" class="pt-36 pb-32 bg-blue-100">
+		<div class="container">
+			<div class="w-full px-4">
+				<div class="xs:max-w-xl sm:max-w-4xl mx-auto text-center mb-16">
+					<h1 class="font-semibold text-2xl text-blue-500 mb-5">PROJECT</h1>
+					<div class="relative w-full overflow-hidden mb-5">
+						<div class="carousel active opacity-100 translate-x-0">
+							<img src="enigmaLaundry/enigma-laundry-transaksi.JPG" alt="Slide 1" class="w-full">
+						</div>
+						<div class="carousel">
+							<img src="enigmaLaundry/laundry-manajemen-pelanggan.JPG" alt="Slide 2" class="w-full">
+						</div>
+						<div class="carousel">
+							<img src="enigmaLaundry/enigma laundry manajemen produk.JPG" alt="Slide 3" class="w-full">
+						</div>
+						
+						<button class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-slate-500 text-white p-2" id="prevBtn">Previous</button>
+						<button class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-slate-500 text-white p-2" id="nextBtn">Next</button>
+					</div>
+					<h2 class="font-semibold sm:text-2xl mb-2">Nama Project: Enigma Laundry</h2>
+					<p>Aplikasi frontend ini dibuat dengan reactjs dengan bantuan api dari pelatih Enigma Camp. Enigma Laundry memuat manajemen pelanggan, manajemen produk, dan manajemen yang memuat transaksi penjualan pelanggan. Aplikasi ini dibuat dengan ReactJs<p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="contact" class="pt-36 pb-32 bg-white">
+		<div class="container mx-auto">
+			<div class="w-full px-4">
+				<div class="text-center">
+					<h1 class="font-semibold text-2xl text-blue-500 mb-10">KONTAK</h1>
+					<div class="grid grid-cols-3 text-lg">
+						<div>
+							<i class="fa-brands fa-whatsapp fa-xl"></i><span> 089514859525</span>
+						</div>
+						<div>
+							<i class="fa-brands fa-github fa-xl"></i> <span><a href="https://github.com/vincentchance"> https://github.com/vincentchance</a></span>
+						</div>
+						<div>
+							<i class="fa-brands fa-linkedin fa-xl"></i><span><a href="https://www.linkedin.com/in/vincentchance"> https://www.linkedin.com/in/vincentchance</a></span>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="pt-20 pb-20 bg-blue-300 text-center">
+		<h2 class="text-white">Copyright &copy; by Vincent Chance</h2>
+	</footer>
+	<script>
+		const menuBtn = document.getElementById('menu-btn');
+		const dropdown = document.getElementById('myDropdown');
+		menuBtn.addEventListener('click', () => {
+			if(dropdown.classList.contains('hidden')) {
+			dropdown.classList.remove('hidden');
+			} else {
+			dropdown.classList.add('hidden');
+			}
+		});	
+		document.addEventListener('click', (event) => {
+			if (!menuBtn.contains(event.target) && !dropdown.contains(event.target)) {
+				dropdown.classList.add('hidden');
+			}
+		});
+		
+		const slides = document.querySelectorAll('.carousel');
+		let currentSlide = 0;
+
+		function showSlide(index) {
+			slides[currentSlide].classList.remove('active');
+			currentSlide = (index + slides.length) % slides.length; // Handle wrap around
+			slides[currentSlide].classList.add('active');
+		}
+
+		document.getElementById('prevBtn').addEventListener('click', () => {
+			showSlide(currentSlide - 1);
+		});
+
+		document.getElementById('nextBtn').addEventListener('click', () => {
+			showSlide(currentSlide + 1);
+		});
+	</script>
+</body>
+</html>
