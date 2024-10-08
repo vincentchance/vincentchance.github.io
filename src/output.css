@@ -988,6 +988,10 @@ video {
     margin-bottom: 1rem;
   }
 
+  .xs\:mb-10 {
+    margin-bottom: 2.5rem;
+  }
+
   .xs\:block {
     display: block;
   }
