@@ -10,3 +10,10 @@
 .carousel.active {
     @apply block;       
 }              
+
+.carousel-1 {
+    @apply hidden;
+}
+.carousel-1.active-1 {
+    @apply block;       
+}          
